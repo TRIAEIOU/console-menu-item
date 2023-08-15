@@ -1,0 +1,2 @@
+# Console menu item
+Simple [Anki]() [addon](some.link.net) ([source](github.com)) that adds a main window menu item to launch the Python debug console. It also allows the user to override the default keyboard shortcut. 
