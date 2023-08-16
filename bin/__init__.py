@@ -1,7 +1,9 @@
 from aqt import mw, gui_hooks, QAction, debug_console
+from .ankiutils import *
 
 LBL = "Python debug console"
 action: QAction
+VER = "1.0.0"
 
 # Add menu items ########################################################
 def init():
@@ -16,3 +18,6 @@ def init():
 # Main ##################################################################
 CFG = mw.addonManager.getConfig(__name__)
 gui_hooks.main_window_did_init.append(init)
+
+if strvercmp(VER, get_version()) > 0:
+	set_version(VER)
